@@ -1,5 +1,5 @@
 <?php
-  session_start()
+  session_start();
   $dbhost = 'oniddb.cws.oregonstate.edu';
   $dbname = 'gamblinr-db';
   $dbuser = 'gamblinr-db';
@@ -16,14 +16,14 @@
     echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
   }
   
-  if (!$stmt->bind_param("ss", $username, $message/*$_SESSION["username"], $_POST["message"]*/)) {
+  if (!$stmt->bind_param("ss", $_SESSION["username"], $_POST["message"])) {
        echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
    }
   
   if (!$stmt->execute()) {
     echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
     
-  echo "success";
+  
   }
   
-  ?>
+  

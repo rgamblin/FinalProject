@@ -30,7 +30,7 @@ function newMessage()
 
     errorNode.textContent = httpRequest.responseText;
 
-    //form.submit();
+    form.submit();
 
 
   }

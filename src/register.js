@@ -29,7 +29,7 @@ function registerNewUser()
     if(httpRequest.responseText == 'nameTaken')
       errorNode.textContent = "That name is already taken, try again";
     else if(httpRequest.responseText == 'success')
-      window.location.href('http://web.engr.oregonstate.edu/~gamblinr/FinalProject/src/login.php');
+      window.location.href('http://web.engr.oregonstate.edu/~gamblinr/CS290/Final_Project/login.php');
     else 
       errorNode.textContent = httpRequest.responseText;
     

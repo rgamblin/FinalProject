@@ -8,7 +8,7 @@
   <head>
     <meta charset="UTF-8">
     <title>register.php</title>
-    <script src='twitterPlusOne.js'></script>
+    <script src='register.js'></script>
   </head>
   <section>
     <form action="content.php" method="post">
